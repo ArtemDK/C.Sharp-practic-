@@ -20,7 +20,7 @@ int y2 = Convert.ToInt32(Console.ReadLine());
 // double sum = Math.Sqrt ((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
 // Console.WriteLine (Math.Round(sum,2));
 
-double Summlenght(int x1с, int y1c, int x2с, int y2c)
+double Summlenght(int x1c, int y1c, int x2c, int y2c)
 {
     return Math.Sqrt((x1c - x2c) * (x1c - x2c) + (y1c - y2c) * (y1c - y2c));
 }
