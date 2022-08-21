@@ -4,7 +4,7 @@
 
 Console.Write("Введите целое число : ");
 int n = Convert.ToInt32(Console.ReadLine());
-if (n < 1) Console.WriteLine("введите число больше ноля");
+if (n < 1) Console.WriteLine("введите число больше 1");
 
 void PrintQuard(int a)
 {

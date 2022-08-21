@@ -22,7 +22,7 @@ int y2 = Convert.ToInt32(Console.ReadLine());
 
 double Summlenght(int x1с, int y1c, int x2с, int y2c)
 {
-    return Math.Sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2));
+    return Math.Sqrt((x1c - x2c) * (x1c - x2c) + (y1c - y2c) * (y1c - y2c));
 }
 double result = Summlenght(x1, y1, x2, y2);
 Console.WriteLine(Math.Round(result, 2, MidpointRounding.ToZero));
