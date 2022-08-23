@@ -12,7 +12,7 @@ if (num < 0)
     Console.WriteLine("Число элементов не натуральное");
     return;
 }
-
+// ---------------------------------------------------
 int[] CreateArrayRndInt(int size, int min, int max)
 {
     if (size == 0)
@@ -26,7 +26,7 @@ int[] CreateArrayRndInt(int size, int min, int max)
     }
     return array;
 }
-
+// ---------------------------------------------------------------
 int[] GetMults(int[] array)
 {
     int size = array.Length % 2 == 0 ? array.Length / 2 : array.Length / 2 + 1; // Тернарный оператор, Если длина массива четная, то Size будет в два раза меньше, если не четное, то Zize будет в два раза меньше +1
@@ -48,6 +48,21 @@ int[] GetMults(int[] array)
     }
     return rezult;
 }
+// ------Второй Метод - через FOR---------------
+
+// int[] NewArray(int[] array)
+// {
+//     int size = array.Length / 2;
+//     if (array.Length % 2 != 0) size++;
+//     int[] rezult = new int[size];
+//     for (int i = 0; i < array.Length / 2; i++)
+//     {
+//         rezult[i] = array[i] * array[array.Length - i - 1];
+//     }
+//     if (array.Length % 2 != 0) rezult[size - 1] = array[array.Length / 2];
+//     return rezult;
+// }
+// -------------------------------------------
 void PrintArr(int[] array)
 {
     if (array == null || array.Length <= 0)
@@ -63,13 +78,12 @@ void PrintArr(int[] array)
     }
     Console.Write("]");
 }
-
+// -----------------------------------------------
 int[] arr = CreateArrayRndInt(num, 0, 9);
 PrintArr(arr);
 int[] multarray = GetMults(arr);
 Console.Write(" -> ");
 PrintArr(multarray);
-
 
 
 
