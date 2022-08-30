@@ -43,29 +43,29 @@ void Print(int[] array)
 }
 
 //Array.Reverse(arr) - Метод реверзии массива
-void Reload(int[] array)
-{
-    int size = array.Length;
-    int index1 = 0;
-    int index2 = size - 1;
+// void Reload(int[] array)
+// {
+//     int size = array.Length;
+//     int index1 = 0;
+//     int index2 = size - 1;
 
-    while (index1 < index2)
-    {
-        int obj = array[index1];
-        array[index1] = array[index2];
-        array[index2] = obj;
-        index1++;
-        index2--;
-    }
-}
-void Reload1(int[] array) // Метод через For
-{
-    int size = array.Length;
-    for (int i = 0; i < size/2; i++)
-    {
-        int obj = array[i];
-        array[i] = array[size - 1 - i];
-        array[size - 1 - i] = obj;
+//     while (index1 < index2)
+//     {
+//         int obj = array[index1];
+//         array[index1] = array[index2];
+//         array[index2] = obj;
+//         index1++;
+//         index2--;
+//     }
+// }
+// void Reload1(int[] array) // Метод через For
+// {
+//     int size = array.Length;
+//     for (int i = 0; i < size/2; i++)
+//     {
+//         int obj = array[i];
+//         array[i] = array[size - 1 - i];
+//         array[size - 1 - i] = obj;
 
-    }
-}
+//     }
+// }
